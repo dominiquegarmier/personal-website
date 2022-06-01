@@ -1,0 +1,35 @@
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__name {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.header__nav__item {
+  font-weight: bold;
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  text-align: right;
+  transition: 0.05s ease-in-out;
+}
+
+.header__nav__item:hover {
+  cursor: pointer;
+  transform: scaleX(1.1);
+  transform-origin: right;
+  color: var(--text-light-accent);
+}
