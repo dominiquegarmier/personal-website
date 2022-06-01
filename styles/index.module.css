@@ -1,5 +1,6 @@
 .header {
-  z-index: 1;
+  z-index: 100;
+  pointer-events: none;
   position: fixed;
   width: 100%;
   top: 0;
@@ -9,12 +10,14 @@
 }
 
 .header__name {
+  pointer-events: auto;
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem;
 }
 
 .header__nav {
+  pointer-events: auto;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -69,7 +72,6 @@
 }
 
 .container__innner {
-  z-index: 9;
   width: min(100%, 1200px);
   display: flex;
   flex-direction: column;
@@ -92,6 +94,13 @@
   height: 2px;
   background-color: var(--text-light-accent);
   margin: 1rem 0;
+}
+
+.section__text {
+  font-size: 2rem;
+  line-height: 1.5;
+  padding: 2rem 1rem;
+  text-align: justify;
 }
 
 .section__sub {
@@ -131,12 +140,12 @@
   line-height: 1.5;
 }
 
-.section__sub__desc__link {
+.link {
   transition: 0.1s ease-in-out;
   display: inline-block;
   color: var(--text-light-accent);
 }
 
-.section__sub__desc__link:hover {
+.link:hover {
   transform: skew(10deg);
 }
