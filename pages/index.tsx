@@ -9,10 +9,26 @@ const Home: NextPage = () => {
   return (
     <>
       <Header />
-      <Hero />
       <Content>
+        <Hero />
         <div className={styles.section}>
-          <div className={styles.section__title}>projects</div>
+          <div className={styles.section__title} id="about">
+            about
+          </div>
+          <div className={styles.section__sub}>
+            <div className={styles.section__sub__desc}>
+              Hello <br />I{"'"}m Dominique, a 21 year old mathematics student
+              at ETH Zurich. <br />
+              In my freetime I spend alot of time working a various programming
+              sideprojects. Some of which are presented here.
+              <br />
+            </div>
+          </div>
+        </div>
+        <div className={styles.section}>
+          <div className={styles.section__title} id="projects">
+            projects
+          </div>
           <div className={styles.section__sub}>
             <div
               className={`${styles.section__sub__title} ${styles["section__sub__title--unfinished"]}`}
@@ -35,9 +51,12 @@ const Home: NextPage = () => {
               </Link>
             </div>
             <div className={styles.section__sub__desc}>
-              Award-winning machine learning algorithm for approximating
-              solutions to the initial value problem of non linear ordinary
-              differntial equations.
+              <Link href="./#awards">
+                <a className={styles.section__sub__desc__link}>Award-winning</a>
+              </Link>{" "}
+              machine learning algorithm for approximating solutions to the
+              initial value problem of non linear ordinary differntial
+              equations.
             </div>
           </div>
           <div className={styles.section__sub}>
@@ -57,11 +76,10 @@ const Home: NextPage = () => {
               </Link>
             </div>
             <div className={styles.section__sub__desc}>
-              Iterative based traffic simulation for omnicient agents. Based on
-              the
+              Iterative traffic simulation for omnicient agents. Based on the{" "}
               <Link href="https://www.matsim.org/">
-                <a> MATSim </a>
-              </Link>
+                <a className={styles.section__sub__desc__link}>MATSim</a>
+              </Link>{" "}
               project.
             </div>
           </div>

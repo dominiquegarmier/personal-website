@@ -1,30 +1,5 @@
-.hero {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero__text {
-  width: min(100%, 1200px);
-  font-size: 6rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.hero__text__part {
-  display: inline-block;
-  transition: 0.05s ease-in-out;
-}
-
-.hero__text__part:hover {
-  cursor: pointer;
-  transform: skew(10deg);
-  color: var(--text-light-accent);
-}
-
 .header {
+  z-index: 1;
   position: fixed;
   width: 100%;
   top: 0;
@@ -50,13 +25,38 @@
   padding: 0.25rem;
   font-size: 1.5rem;
   text-align: right;
-  transition: 0.05s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .header__nav__item:hover {
   cursor: pointer;
   transform: scaleX(1.1);
   transform-origin: right;
+  color: var(--text-light-accent);
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__text {
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.hero__text__part {
+  display: inline-block;
+  transition: 0.1s ease-in-out;
+}
+
+.hero__text__part:hover {
+  cursor: pointer;
+  transform: skew(10deg);
   color: var(--text-light-accent);
 }
 
@@ -69,6 +69,7 @@
 }
 
 .container__innner {
+  z-index: 9;
   width: min(100%, 1200px);
   display: flex;
   flex-direction: column;
@@ -99,7 +100,7 @@
 }
 
 .section__sub__title {
-  transition: 0.05s ease-in-out;
+  transition: 0.1s ease-in-out;
   font-size: 4rem;
   padding: 1rem 0;
   font-weight: bold;
@@ -118,7 +119,7 @@
   padding: 0.125rem;
   background: var(--bg-yellow);
   color: var(--text-dark);
-  transition: 0.05s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 .section__sub__title--unfinished:hover::after {
@@ -128,4 +129,14 @@
 .section__sub__desc {
   font-size: 2rem;
   line-height: 1.5;
+}
+
+.section__sub__desc__link {
+  transition: 0.1s ease-in-out;
+  display: inline-block;
+  color: var(--text-light-accent);
+}
+
+.section__sub__desc__link:hover {
+  transform: skew(10deg);
 }

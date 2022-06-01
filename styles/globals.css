@@ -137,6 +137,7 @@ global variables
 */
 :root {
   --bg-dark: #0d0d0d;
+  --bg-dark-accent: #000000;
   --bg-yellow: #f7c600;
   --text-light: #ffffff;
   --text-dark: #0a0a0a;
