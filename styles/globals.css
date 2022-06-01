@@ -127,13 +127,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /*
 global variables
 */
 :root {
   --bg-dark: #0d0d0d;
+  --bg-yellow: #f7c600;
   --text-light: #ffffff;
+  --text-dark: #0a0a0a;
   --text-light-accent: #c4c4c4;
 }
 

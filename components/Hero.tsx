@@ -1,5 +1,5 @@
 import { FC } from "react";
-import styles from "../styles/hero.module.css";
+import styles from "../styles/index.module.css";
 
 export const Hero: FC = () => {
   return (
