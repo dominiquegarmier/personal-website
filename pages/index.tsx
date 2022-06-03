@@ -12,10 +12,8 @@ const Home: NextPage = () => {
       <Header />
       <Content>
         <Hero />
-        <div className={styles.section}>
-          <div className={styles.section__title} id="about">
-            about
-          </div>
+        <div className={styles.section} id="about">
+          <div className={styles.section__title}>about</div>
           <div className={styles.section__text}>
             Hello,
             <br />I{"'"}m Dominique, a 21 year old mathematics student and
@@ -44,10 +42,8 @@ const Home: NextPage = () => {
             interests me even more.
           </div>
         </div>
-        <div className={styles.section}>
-          <div className={styles.section__title} id="projects">
-            projects
-          </div>
+        <div className={styles.section} id="projects">
+          <div className={styles.section__title}>projects</div>
           <div className={styles.section__sub}>
             <div
               className={`${styles.section__sub__title} ${styles["section__sub__title--unfinished"]}`}
@@ -103,10 +99,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className={styles.section}>
-          <div className={styles.section__title} id="awards">
-            awards
-          </div>
+        <div className={styles.section} id="awards">
+          <div className={styles.section__title}>awards</div>
           <div className={styles.section__text}>
             All awards listed below were awarded for the work related to my{" "}
             <Link href="/#anidea">
@@ -149,22 +143,17 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <div className={styles.section}>
-          <div className={styles.section__title} id="experience">
-            experience
-          </div>
+        <div className={styles.section} id="experience">
+          <div className={styles.section__title}>experience</div>
           <div className={styles.section__text}>
             Along the journey I have worked with many technolgies and
             frameworks. Here is a overview of some of them.
           </div>
         </div>
-        <div className={styles.section}>
-          <div className={styles.section__title} id="contact">
-            contact
-          </div>
+        <div className={styles.section} id="contact">
+          <FlashText text="sayhi!" timeout={0.5} />
           <div className={styles.section__text}>Say Hi!</div>
         </div>
-        <FlashText text="hello world" />
       </Content>
     </>
   );

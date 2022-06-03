@@ -150,3 +150,17 @@
 .link:hover {
   transform: skew(10deg);
 }
+
+.flashtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flashtext__text {
+  font-size: 32rem;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+}
