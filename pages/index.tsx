@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 import { Content } from "../components/Content";
 import styles from "../styles/index.module.css";
 import Link from "next/link";
+import { FlashText } from "../components/FlashText";
 
 const Home: NextPage = () => {
   return (
@@ -31,13 +32,13 @@ const Home: NextPage = () => {
             aswell as some open-source projects. Some of the work im most proud
             of can be found below.
             <br />
-            <br />I am very passionate about the intersection of mathematics and
-            computer science. And would one day like to work / do research in
-            fields such as Theoretical Machineleanring, Quantum Computability
+            <br />I{"'"}m very passionate about the intersection of mathematics
+            and computer science. And would one day like to work / do research
+            in fields such as Theoretical Machineleanring, Quantum Computability
             and General Inteligence. This is why I{"'"}m currently working on
             building a solid foundational understanding of mathematics and
             computer science, by taking as many related courses as possible next
-            to the requried curriculum
+            to the requried curriculum.
             <br />
             However I would not be surprised if on the way I find something that
             interests me even more.
@@ -163,6 +164,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.section__text}>Say Hi!</div>
         </div>
+        <FlashText text="hello world" />
       </Content>
     </>
   );
