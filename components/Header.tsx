@@ -20,13 +20,13 @@ export const Header: FC = () => {
           </Link>
         </div>
         <div className={styles.header__nav__item}>
-          <Link href="/#awards">
-            <a>awards</a>
+          <Link href="/#experience">
+            <a>experience</a>
           </Link>
         </div>
         <div className={styles.header__nav__item}>
-          <Link href="/#experience">
-            <a>experience</a>
+          <Link href="/#awards">
+            <a>awards</a>
           </Link>
         </div>
         <div className={styles.header__nav__item}>

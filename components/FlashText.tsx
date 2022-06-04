@@ -3,10 +3,10 @@ import styles from "../styles/index.module.css";
 
 interface Props {
   text: string;
-  timeout?: number;
+  timeout: number;
 }
 
-export const FlashText: FC<Props> = ({ text, timeout = 1 }) => {
+export const FlashText: FC<Props> = ({ text, timeout }) => {
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
